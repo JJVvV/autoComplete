@@ -5,4 +5,5 @@ npm install && npm start
 
 gulp
 
-open [localhost:3003](localhost:3003)
+
+open [http://localhost:3003](http://localhost:3003)
