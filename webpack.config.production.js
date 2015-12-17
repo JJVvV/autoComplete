@@ -3,7 +3,7 @@ var webpack = require('webpack');
 console.log('**********webpack started *************');
 
 module.exports = {
-  //devtool: 'cheap-source-map',
+  devtool: 'cheap-source-map',
 
   entry: {
    'App': [ './src/App'],
