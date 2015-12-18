@@ -264,8 +264,12 @@ AutoComplete.prototype._throttle = throttle(function(){
         fail: function(data){
             //console.log('ajax success');
 
-            that._bindData(that.data);
+            if(isFunc(that.options.handleData)){
+                data = that.options.handleData(data);
+            }
+            that._bindData(data);
         }
+
     });
 
 
